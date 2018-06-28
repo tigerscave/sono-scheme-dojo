@@ -1,3 +1,10 @@
+
+(define add1
+  (lambda (x)
+    (+ x 1)))
+
+(print (add1 5))
+
 (define sub1
   (lambda (x)
     (- x 1)))
@@ -16,3 +23,10 @@
       (cal n1 n2))))
 
 (print ((calculate pow) 2 4))
+
+(print
+  ((lambda (cal)
+      (cal 5 3)
+        )
+        pow)
+)
