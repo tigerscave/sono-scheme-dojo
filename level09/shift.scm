@@ -21,4 +21,4 @@
       (build (second (first pair))
         (second pair)))))
 
-(print (shift '(a (b c))))
+(print (shift '((a b) c)))

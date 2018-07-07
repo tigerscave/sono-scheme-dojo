@@ -69,5 +69,3 @@
             (else (add1 (length (cdr l))))))))
   '(a b c d e f g f i o kokoko ooooo))
 )
-
-(print le)
