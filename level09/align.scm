@@ -5,6 +5,15 @@
 (print (atom? 'a))
 (print (atom? '(a)))
 
+(define a-pair?
+  (lambda (x)
+    (cond
+      ((atom? x) #f)
+      ((null? x) #f)
+      ((null? (cdr x)) #f)
+      ((null? (cdr (cdr x))) #t)
+      (else #f))))
+
 
 (define first
   (lambda (p)
@@ -39,6 +48,11 @@
         (build (first para)
           (align (second para)))))))
 
+(print "-----align-----")
+(print (align 'a))
+(print (align '((a b) (c d))))
+(print (align '((a b) (c d d))))
+
 (define length*
   (lambda (para)
     (cond
@@ -47,8 +61,8 @@
         (+ (length* (first para))
             (length* (second para)))))))
 
+(print "-----length*-----")
 (print (length* '((a b) c)))
-
 
 (define weight*
   (lambda (para)
