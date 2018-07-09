@@ -21,3 +21,4 @@
 
 (print (looking 'cavior '(6 2 4 cavior 5 7 3)))
 (print (looking 'cavior '(6 2 grits cavior 5 7 3)))
+(print (keep-looking 'a 2 '(i k a)))
