@@ -17,3 +17,4 @@
 
 (print (collatz 5))
 (print (collatz 9948903289208423840948320980938432))
+(print (collatz 20202020))
